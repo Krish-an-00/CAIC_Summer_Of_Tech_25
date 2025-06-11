@@ -1,0 +1,7 @@
+CTF conducted on 9 june 
+1. Classic Caesar: i was ale to see that every letter is shifted by 3 so continued that , to verify i used rot13 and found flag
+2. Fair Enough
+3. Oui Oui Secret : for both these first i tried rot 13 and then tried a script to mention all ciphers but none was matching as a meaningful text then tried lot for putting but failed at last i saw hint and then realised i am missing the og tool dcode analyzer i just pated the coded string there and checked a few and attacked and then i found the meaningful flag.
+4. Chameleon image : Used `binwalk -Me mystery_file.jpg` to extract embedded files, found `flag.txt`, `readme.txt`, `secret.txt`, and `hidden/treasure.txt`; opened `flag.txt` to got the flag
+5. Hidden in Plain Sight : I solved the "Hidden in Plain Sight challenge after seeing hint  here I was given an image file called miku.jpg that had a hidden message inside it. The hint told me to use a tool called stegseek along with a password list called rockyou.txt to crack the password. First, I downloaded both miku.jpg and rockyou.txt and saved them in the same folder. Then, I used the command `stegseek --crack -sf miku.jpg -wl rockyou.txt`, where `-sf` is the image file and `-wl` is the wordlist file. Stegseek tried many passwords from the list and finally cracked it, extracting a secret file from the image. I opened the file and found the flag. I used the tools stegseek and rockyou.txt and learned how to find hidden messages in images using brute-force password attacks.
+
